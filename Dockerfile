@@ -1,1 +1,1 @@
-FROM directus/directus:9.23.4
+FROM directus/directus:9.24.0
