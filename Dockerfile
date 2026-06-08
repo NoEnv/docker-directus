@@ -16,7 +16,7 @@ ENV \
 	NODE_ENV="production" \
 	NPM_CONFIG_UPDATE_NOTIFIER="false"
 
-COPY --from=builder --chown=node:node /directus/dist .
+COPY --from=builder --chown=node:node /directus .
 
 CMD : \
 	&& node /directus/cli.js bootstrap \
